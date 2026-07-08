@@ -1,0 +1,298 @@
+{
+  "home": {
+    "weather": {
+      "day": "Saturday",
+      "temperature": 18,
+      "unit": "C",
+      "condition": "Sunny",
+      "label": "SATURDAY · 18° · SUNNY"
+    },
+    "greeting": "Welcome to",
+    "city": "Melbourne",
+    "tagline": "Your local guide to the world's most liveable city — coffee, work, friends and good records.",
+    "searchPlaceholder": "Search cafés, jobs, meetups…",
+    "exploreTitle": "Explore the city",
+    "exploreCount": "4 guides",
+    "featuredTitle": "Featured this week"
+  },
+  "guides": [
+    {
+      "id": 1,
+      "slug": "coffee",
+      "title": "Coffee",
+      "subtitle": "The city's best cafés & roasters",
+      "count": 128,
+      "countLabel": "128 spots",
+      "icon": "coffee",
+      "color": "#B4573C",
+      "route": "/coffee"
+    },
+    {
+      "id": 2,
+      "slug": "jobs",
+      "title": "Jobs",
+      "subtitle": "Roles hiring across Melbourne",
+      "count": 340,
+      "countLabel": "340 open",
+      "icon": "briefcase",
+      "color": "#2F4C3A",
+      "route": "/jobs"
+    },
+    {
+      "id": 3,
+      "slug": "meetups",
+      "title": "Meetups",
+      "subtitle": "Find your people & make friends",
+      "count": 56,
+      "countLabel": "56 groups",
+      "icon": "users",
+      "color": "#E0B44A",
+      "route": "/groups"
+    },
+    {
+      "id": 4,
+      "slug": "records",
+      "title": "Records",
+      "subtitle": "Vinyl & crate-digging spots",
+      "count": 22,
+      "countLabel": "22 stores",
+      "icon": "disc",
+      "color": "#6E3D5B",
+      "route": "/records"
+    }
+  ],
+  "featured": [
+    {
+      "id": 1,
+      "badge": "CAFÉ",
+      "type": "coffee",
+      "title": "Patricia Coffee Brewers",
+      "meta": "CBD · ★ 4.9",
+      "suburb": "CBD",
+      "rating": 4.9,
+      "refId": 1,
+      "image": "https://picsum.photos/seed/patricia/464/224"
+    },
+    {
+      "id": 2,
+      "badge": "HIRING",
+      "type": "job",
+      "title": "Product Designer · Canva",
+      "meta": "Surry Hills · $120k",
+      "suburb": "Surry Hills",
+      "salary": "$120k",
+      "refId": 1,
+      "image": "https://picsum.photos/seed/canva/464/224"
+    },
+    {
+      "id": 3,
+      "badge": "VINYL",
+      "type": "record",
+      "title": "Round & Round Records",
+      "meta": "Brunswick · 4.8",
+      "suburb": "Brunswick",
+      "rating": 4.8,
+      "refId": 1,
+      "image": "https://picsum.photos/seed/roundround/464/224"
+    }
+  ],
+  "coffeeScreen": {
+    "eyebrow": "BEST OF MELBOURNE",
+    "title": "Coffee",
+    "subtitle": "128 specialty cafés & roasters, ranked by locals.",
+    "filters": ["All", "Espresso", "Filter", "Brunch", "Roasters"]
+  },
+  "cafes": [
+    {
+      "id": 1,
+      "name": "Patricia Coffee Brewers",
+      "rating": 4.9,
+      "suburb": "CBD",
+      "tags": "Espresso · Standing room",
+      "categories": ["Espresso"],
+      "priceLevel": "$$",
+      "image": "https://picsum.photos/seed/patricia/128/128"
+    },
+    {
+      "id": 2,
+      "name": "Proud Mary",
+      "rating": 4.8,
+      "suburb": "Collingwood",
+      "tags": "Filter · All-day brunch",
+      "categories": ["Filter", "Brunch"],
+      "priceLevel": "$$$",
+      "image": "https://picsum.photos/seed/proudmary/128/128"
+    },
+    {
+      "id": 3,
+      "name": "Market Lane Coffee",
+      "rating": 4.7,
+      "suburb": "Carlton",
+      "tags": "Single origin · Retail",
+      "categories": ["Filter"],
+      "priceLevel": "$$",
+      "image": "https://picsum.photos/seed/marketlane/128/128"
+    },
+    {
+      "id": 4,
+      "name": "Seven Seeds",
+      "rating": 4.8,
+      "suburb": "Carlton",
+      "tags": "Roastery · Brunch",
+      "categories": ["Roasters", "Brunch"],
+      "priceLevel": "$$",
+      "image": "https://picsum.photos/seed/sevenseeds/128/128"
+    }
+  ],
+  "jobsScreen": {
+    "eyebrow": "WORK IN MELBOURNE",
+    "title": "Find a job",
+    "subtitle": "340 roles hiring across the city right now.",
+    "filters": ["All", "Design", "Tech", "Hospitality", "Remote"]
+  },
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Senior Product Designer",
+      "company": "Canva",
+      "suburb": "Cremorne",
+      "avatar": "C",
+      "salary": "$130–160k",
+      "employment": "Full-time",
+      "location": "Hybrid",
+      "category": "Design"
+    },
+    {
+      "id": 2,
+      "title": "Frontend Engineer",
+      "company": "REA Group",
+      "suburb": "Richmond",
+      "avatar": "R",
+      "salary": "$120–150k",
+      "employment": "Full-time",
+      "location": "Hybrid",
+      "category": "Tech"
+    },
+    {
+      "id": 3,
+      "title": "Head Barista",
+      "company": "Proud Mary",
+      "suburb": "Collingwood",
+      "avatar": "P",
+      "salary": "$34 / hr",
+      "employment": "Part-time",
+      "location": "On-site",
+      "category": "Hospitality"
+    },
+    {
+      "id": 4,
+      "title": "Marketing Lead",
+      "company": "Who Gives A Crap",
+      "suburb": "Fitzroy",
+      "avatar": "W",
+      "salary": "$115–140k",
+      "employment": "Full-time",
+      "location": "Remote",
+      "category": "Remote"
+    }
+  ],
+  "meetupsScreen": {
+    "eyebrow": "MEET YOUR PEOPLE",
+    "title": "Meetups",
+    "subtitle": "56 groups making it easy to find friends in Melbourne.",
+    "filters": ["All", "Social", "Fitness", "Creative", "New here"]
+  },
+  "groups": [
+    {
+      "id": 1,
+      "name": "Melbourne Coffee Lovers",
+      "category": "Social",
+      "suburb": "CBD",
+      "description": "Weekend café crawls & latte-art throwdowns across the city.",
+      "members": 1200,
+      "membersLabel": "1.2k members",
+      "nextMeet": "Sat 9:00am"
+    },
+    {
+      "id": 2,
+      "name": "Run Club Melbourne",
+      "category": "Fitness",
+      "suburb": "Yarra",
+      "description": "Easy 5k along the river every Tuesday. All paces welcome.",
+      "members": 860,
+      "membersLabel": "860 members",
+      "nextMeet": "Tue 6:00pm"
+    },
+    {
+      "id": 3,
+      "name": "Design & Coffee",
+      "category": "Creative",
+      "suburb": "Collingwood",
+      "description": "Portfolio nights & casual crits for designers and makers.",
+      "members": 540,
+      "membersLabel": "540 members",
+      "nextMeet": "Thu 7:00pm"
+    },
+    {
+      "id": 4,
+      "name": "New in Melbourne",
+      "category": "Social",
+      "suburb": "Citywide",
+      "description": "Just moved here? Make friends fast at weekly hangs.",
+      "members": 2400,
+      "membersLabel": "2.4k members",
+      "nextMeet": "Fri 6:30pm"
+    }
+  ],
+  "recordsScreen": {
+    "eyebrow": "CRATE DIGGING",
+    "title": "Records",
+    "subtitle": "22 vinyl & record stores worth the trip across town.",
+    "filters": ["All", "Vinyl", "Rare finds", "Second-hand", "New in"]
+  },
+  "records": [
+    {
+      "id": 1,
+      "name": "Round & Round Records",
+      "rating": 4.8,
+      "suburb": "Brunswick",
+      "genres": "Soul · Funk · Jazz",
+      "categories": ["Vinyl", "Rare finds"],
+      "image": "https://picsum.photos/seed/roundround/120/120"
+    },
+    {
+      "id": 2,
+      "name": "Basement Discs",
+      "rating": 4.7,
+      "suburb": "CBD",
+      "genres": "Rock · Blues · Live",
+      "categories": ["Vinyl", "Second-hand"],
+      "image": "https://picsum.photos/seed/basement/120/120"
+    },
+    {
+      "id": 3,
+      "name": "Strangeworld Records",
+      "rating": 4.9,
+      "suburb": "Fitzroy",
+      "genres": "Punk · Indie · Rare",
+      "categories": ["Vinyl", "Rare finds"],
+      "image": "https://picsum.photos/seed/strangeworld/120/120"
+    },
+    {
+      "id": 4,
+      "name": "Thornbury Records",
+      "rating": 4.6,
+      "suburb": "Thornbury",
+      "genres": "Second-hand · All genres",
+      "categories": ["Second-hand"],
+      "image": "https://picsum.photos/seed/thornbury/120/120"
+    }
+  ],
+  "nav": [
+    { "id": 1, "label": "Home", "icon": "home", "route": "/", "active": true },
+    { "id": 2, "label": "Coffee", "icon": "coffee", "route": "/coffee", "active": false },
+    { "id": 3, "label": "Jobs", "icon": "briefcase", "route": "/jobs", "active": false },
+    { "id": 4, "label": "Groups", "icon": "users", "route": "/groups", "active": false },
+    { "id": 5, "label": "Records", "icon": "disc", "route": "/records", "active": false }
+  ]
+}
