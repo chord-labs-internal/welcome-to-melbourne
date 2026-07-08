@@ -23,7 +23,7 @@ final class RootTabBarUITests: XCTestCase {
 
         // Home content is showing.
         XCTAssertTrue(app.staticTexts["Melbourne"].waitForExistence(timeout: 5),
-                      "Home placeholder should show the Melbourne hero")
+                      "Home screen should show the Melbourne hero")
 
         // Tapping the Coffee tab navigates to the Coffee screen.
         app.tabBars.buttons["Coffee"].tap()
