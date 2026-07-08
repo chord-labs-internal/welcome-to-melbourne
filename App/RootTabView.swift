@@ -5,10 +5,9 @@ import SwiftUI
 /// The app's root navigation shell: an iOS 26 Liquid Glass floating `TabView`
 /// driven by ``RootViewModel``.
 ///
-/// Each tab hosts a screen resolved by route. The Home tab shows a temporary
-/// placeholder (``HomePlaceholderView``) that issue #6 replaces; the category
-/// tabs show lightweight placeholders (``CategoryPlaceholderView``) filled out
-/// in issues #7–#10.
+/// Each tab hosts a screen resolved by route. The Home tab shows the real
+/// ``HomeView`` (issue #6); the category tabs show lightweight placeholders
+/// (``CategoryPlaceholderView``) filled out in issues #7–#10.
 struct RootTabView: View {
     @State private var viewModel: RootViewModel
     @State private var selectedRoute: String
@@ -35,7 +34,7 @@ struct RootTabView: View {
     private func screen(for tab: RootTab) -> some View {
         switch tab.route {
         case "/":
-            HomePlaceholderView(home: viewModel.content?.home)
+            HomeView()
         case "/coffee":
             CategoryPlaceholderView(
                 title: viewModel.content?.coffeeScreen.title ?? tab.label,
@@ -59,31 +58,6 @@ struct RootTabView: View {
         default:
             CategoryPlaceholderView(title: tab.label, identifier: "screen.\(tab.label.lowercased())")
         }
-    }
-}
-
-// MARK: - HomePlaceholderView
-
-/// TEMPORARY Home screen placeholder for issue #5.
-///
-/// Issue #6 replaces this view with the real Home screen — swap it where
-/// ``RootTabView/screen(for:)`` returns it for the `"/"` route. Kept as a
-/// small, self-contained view so that swap is a one-line change.
-struct HomePlaceholderView: View {
-    let home: Home?
-
-    var body: some View {
-        VStack(spacing: Theme.Spacing.medium) {
-            Text(home?.greeting ?? "Welcome to")
-                .font(Theme.Typography.greeting)
-                .foregroundStyle(Theme.Color.body)
-            Text(home?.city ?? "Melbourne")
-                .font(Theme.Typography.heroTitle)
-                .foregroundStyle(Theme.Color.ink)
-                .accessibilityIdentifier("screen.home.title")
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Theme.Color.cream)
     }
 }
 
