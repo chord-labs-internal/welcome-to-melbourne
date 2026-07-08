@@ -4,7 +4,7 @@ import SwiftUI
 struct WelcomeToMelbourneApp: App {
     var body: some Scene {
         WindowGroup {
-            RootView()
+            RootTabView()
         }
     }
 }
