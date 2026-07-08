@@ -1,0 +1,75 @@
+name: WelcomeToMelbourne
+options:
+  bundleIdPrefix: com.chordlabs
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    GENERATE_INFOPLIST_FILE: true
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  WelcomeToMelbourne:
+    type: application
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: App
+      - path: Sources
+      - path: db.json
+        buildPhase: resources
+      - path: Resources
+        optional: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.chordlabs.welcometomelbourne
+        INFOPLIST_KEY_UILaunchScreen_Generation: true
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait"
+        INFOPLIST_KEY_CFBundleDisplayName: "Melbourne"
+        ENABLE_PREVIEWS: true
+
+  WelcomeToMelbourneTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: Tests
+    dependencies:
+      - target: WelcomeToMelbourne
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.chordlabs.welcometomelbourne.tests
+        GENERATE_INFOPLIST_FILE: true
+
+  WelcomeToMelbourneUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: UITests
+    dependencies:
+      - target: WelcomeToMelbourne
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.chordlabs.welcometomelbourne.uitests
+        GENERATE_INFOPLIST_FILE: true
+
+schemes:
+  WelcomeToMelbourne:
+    build:
+      targets:
+        WelcomeToMelbourne: all
+        WelcomeToMelbourneTests: [test]
+        WelcomeToMelbourneUITests: [test]
+    test:
+      targets:
+        - WelcomeToMelbourneTests
+        - WelcomeToMelbourneUITests
+      gatherCoverageData: true
