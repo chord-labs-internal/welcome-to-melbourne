@@ -46,10 +46,7 @@ struct RootTabView: View {
                 identifier: "screen.jobs"
             )
         case "/groups":
-            CategoryPlaceholderView(
-                title: viewModel.content?.meetupsScreen.title ?? tab.label,
-                identifier: "screen.groups"
-            )
+            MeetupsView()
         case "/records":
             CategoryPlaceholderView(
                 title: viewModel.content?.recordsScreen.title ?? tab.label,
