@@ -42,10 +42,7 @@ struct RootTabView: View {
         case "/groups":
             MeetupsView()
         case "/records":
-            CategoryPlaceholderView(
-                title: viewModel.content?.recordsScreen.title ?? tab.label,
-                identifier: "screen.records"
-            )
+            RecordsView()
         default:
             CategoryPlaceholderView(title: tab.label, identifier: "screen.\(tab.label.lowercased())")
         }
