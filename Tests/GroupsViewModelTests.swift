@@ -152,7 +152,9 @@ struct GroupsViewModelTests {
 // MARK: - Fixture
 
 private extension AppContent {
-    /// Content matching `db.json` for the fields the Meetups screen renders.
+    /// A fixed stand-in for `db.json` covering the fields the Meetups screen
+    /// renders. Deliberately independent of the real file, so adding content
+    /// there doesn't churn these expectations.
     static let fixture = AppContent(
         home: Home(
             weather: Weather(day: "Saturday", temperature: 18, unit: "C", condition: "Sunny", label: "SATURDAY · 18° · SUNNY"),

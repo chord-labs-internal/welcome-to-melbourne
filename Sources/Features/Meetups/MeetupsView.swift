@@ -124,6 +124,7 @@ private struct FilterRow: View {
             .padding(.horizontal, Theme.Spacing.screen)
         }
         .scrollIndicators(.hidden)
+        .accessibilityIdentifier("meetups.filters")
     }
 }
 
