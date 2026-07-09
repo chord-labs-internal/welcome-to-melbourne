@@ -200,7 +200,7 @@
     "eyebrow": "MEET YOUR PEOPLE",
     "title": "Meetups",
     "subtitle": "56 groups making it easy to find friends in Melbourne.",
-    "filters": ["All", "Social", "Fitness", "Creative", "New here"]
+    "filters": ["All", "Social", "Fitness", "Creative", "New here", "Tech"]
   },
   "groups": [
     {
@@ -242,6 +242,16 @@
       "members": 2400,
       "membersLabel": "2.4k members",
       "nextMeet": "Fri 6:30pm"
+    },
+    {
+      "id": 5,
+      "name": "Melbourne Cocoaheads",
+      "category": "Tech",
+      "suburb": "CBD",
+      "description": "Monthly talks on Swift, SwiftUI & shipping Apple apps.",
+      "members": 730,
+      "membersLabel": "730 members",
+      "nextMeet": "Wed 6:00pm"
     }
   ],
   "recordsScreen": {
